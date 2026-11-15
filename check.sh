@@ -19,7 +19,7 @@ TOKEN="$(od -An -N8 -tx1 /dev/urandom | tr -d ' \n')"
 T1="html/sitio1/check-${TOKEN}-1.txt"     # archivo que SOLO debe servir sitio1
 T2="html/sitio2/check-${TOKEN}-2.txt"     # archivo que SOLO debe servir sitio2
 
-# shellcheck disable=SC2317  # se invoca desde trap
+# shellcheck disable=SC2317,SC2329  # se invoca desde trap
 limpiar() { rm -rf "$TMP"; rm -f "$T1" "$T2"; }
 trap limpiar EXIT
 

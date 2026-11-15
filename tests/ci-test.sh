@@ -12,7 +12,7 @@ RESPALDO="$(mktemp)"
 cp "$CONF" "$RESPALDO"
 fallos=0
 
-# shellcheck disable=SC2317  # se invoca desde trap
+# shellcheck disable=SC2317,SC2329  # se invoca desde trap
 restaurar() { cp "$RESPALDO" "$CONF"; rm -f "$RESPALDO"; docker compose down >/dev/null 2>&1; }
 trap restaurar EXIT
 

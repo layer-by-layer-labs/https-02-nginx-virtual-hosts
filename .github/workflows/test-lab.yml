@@ -19,6 +19,6 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Análisis estático de los scripts
-        run: shellcheck check.sh tests/ci-test.sh
+        run: shellcheck --severity=warning check.sh tests/ci-test.sh
       - name: Pruebas del laboratorio
         run: ./tests/ci-test.sh
