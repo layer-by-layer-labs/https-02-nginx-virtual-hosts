@@ -3,7 +3,7 @@
 [![Probar laboratorio](https://github.com/layer-by-layer-labs/https-02-nginx-virtual-hosts/actions/workflows/test-lab.yml/badge.svg)](https://github.com/layer-by-layer-labs/https-02-nginx-virtual-hosts/actions/workflows/test-lab.yml)
 
 > Serie **HTTPS en Linux: del servidor vacío al sitio seguro** · Unidad 02
-> 1 · 🎬 Vídeo conceptual: *(enlace pendiente)* → 2 · 🧪 este laboratorio → 3 · 🛠️ Solución: *(enlace pendiente)* ⚠️ mírala después de intentarlo
+> 1 · 🎬 [Vídeo conceptual](https://youtu.be/GKrxZUSCYLI) → 2 · 🧪 este laboratorio → 3 · 🛠️ [Solución](https://youtu.be/DIjF52duDy0) ⚠️ mírala después de intentarlo
 
 Tu servidor Nginx publica dos sitios en la misma IP y el mismo puerto: `sitio1.lab.test` y `sitio2.lab.test`. El segundo se creó copiando la configuración del primero. Desde entonces, quien visita `sitio2` ve la página de `sitio1`. Tu trabajo es **averiguar por qué** y corregirlo.
 
