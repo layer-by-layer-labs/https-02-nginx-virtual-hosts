@@ -1,0 +1,3 @@
+# Archivos temporales del verificador
+html/*/check-*.txt
+.DS_Store
